@@ -26,5 +26,8 @@ The Virtual Arsenal is limited using LARS. You Can Easily Edit the Virtual Arsen
 ### Help Menu
 Coming Soon
 
+# Release
+#[V1.0](https://github.com/EqualOwl/Aquamans-CQC/releases/tag/v1.0)
+
 # Wiki
 The [Wiki](https://github.com/EqualOwl/Aquamans-CQC/wiki). Includes information on how to edit spawn locations, add new locations, More Vehicles, Whitelisting Items in the Virtual Arsenal and other things. 
