@@ -1,1 +1,36 @@
 #include "dialogs\MasterHandler.hpp"
+#include "infiSTAR_AdminMenu.hpp"
+
+respawnButton = 1;
+respawn=3;
+respawnDelay=2;
+respawnOnStart=-1;
+
+enableDebugConsole[] = {"76561198095943386", "76561198172055451"};
+
+
+//--- NMD
+#include "nmd\include.hpp"
+#include "nmd\modules\vehicles\include.hpp"
+
+//--- Functions
+class CfgFunctions
+{
+	#include "nmd\cfgFunctions.hpp"
+	#include "nmd\modules\vehicles\cfgFunctions.hpp"
+	#include "scripts\jstar_va\functions\functions.hpp"
+};
+
+class Params
+{
+	#include "nmd\modules\vehicles\params.hpp"
+};
+
+class RscTitles
+{
+	#include "dialogs\AquamansHUD.hpp"
+	#include "dialogs\VehicleSpawner.hpp"
+};
+
+joinUnassigned = 0;
+skipLobby = 1;

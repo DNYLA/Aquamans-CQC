@@ -1,3 +1,7 @@
+private ["_player"];
+
+_player = _this select 0;
+
 /* no fatigue */
 player enableFatigue false;
 
@@ -15,5 +19,40 @@ enableSentences false;
 enableRadio false;
 enableSaving [false, false];
 0 setFog 0;
-setTerrainGrid 48.99;
-player setCustomAimCoef 0.1;
+//setTerrainGrid 50;
+
+/* Player Related Information */
+LastSpawn = "None";
+PlayerSpawnPoint = GetPos Player;
+player setUnitTrait ["Medic",true];
+
+/* Setting Kills & Deaths Variable If Not Already Set */
+if (isNil {profileNamespace getVariable "Aquaman_CQC_Kills"} ) then {
+    profileNameSpace setVariable ["Aquaman_CQC_Kills", 0];
+};
+
+if (isNil {profileNamespace getVariable "Aquaman_CQC_Deaths"} ) then {
+    profileNameSpace setVariable ["Aquaman_CQC_Deaths", 0];
+};
+
+/* Loading Player Variables */
+_LoadPlayerKills = profileNamespace getVariable "Aquaman_CQC_Kills";
+_player setVariable ["Aquaman_CQC_Kills", _LoadPlayerKills];
+_LoadPlayerDeaths = profileNamespace getVariable "Aquaman_CQC_Deaths";
+_player setVariable ["Aquaman_CQC_Deaths", _LoadPlayerKills];
+
+execVM "scripts\InitialLoadout.sqf";
+
+call compile preprocessFile "dialogs\hud.sqf";
+[] spawn AQUAMAN_HUD;
+
+//call compile preprocessFile "dialogs\VehicleSpawn.sqf";
+
+//execVM "scripts\PlayerStats.sqf";
+
+player setUnitTrait ["Medic",true];
+
+
+
+execVM "scripts\aquaman_jump.sqf";
+execVM "scripts\aqua_keybinds.sqf";
