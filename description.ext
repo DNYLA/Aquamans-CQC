@@ -1,0 +1,36 @@
+#include "dialogs\MasterHandler.hpp"
+#include "infiSTAR_AdminMenu.hpp"
+#include "scripts\override_VA\settings.hpp"
+
+respawnButton = 1;
+respawn=3;
+respawnDelay=2;
+respawnOnStart=-1;
+
+enableDebugConsole[] = {"76561198095943386", "76561198172055451"};
+
+//--- Functions
+class CfgFunctions
+{
+	//Credit to Larrow
+	//Link To Larrows Script https://www.dropbox.com/s/l10xioc4crjlb82/override_VA_templates.VR.zip?dl=0&file_subpath=%2Foverride_VA_templates.VR
+	//Link to Forum Post https://forums.bohemia.net/forums/topic/197508-virtual-arsenal-loadouts-restriction/
+	#include "scripts\override_VA\functions\functions.hpp"
+	#include "Functions.hpp"
+};
+
+/* class Params
+{
+
+}; */
+
+class RscTitles
+{
+	#include "dialogs\AquamansHUD.hpp"
+	#include "dialogs\VehicleSpawner.hpp"
+};
+
+joinUnassigned = 0;
+skipLobby = 1;
+//showHUD = 0;
+showGPS = 0;
