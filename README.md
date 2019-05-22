@@ -1,5 +1,5 @@
 # Aquamans-CQC
-
+AuqmansCQC mission file is a simple CQC gamemode for Arma 3.
 # Release
 ### [V1.5](https://github.com/EqualOwl/Aquamans-CQC/releases/tag/1.5) release of the pbo.
 
