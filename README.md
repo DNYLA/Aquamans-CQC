@@ -1,7 +1,7 @@
 # Aquamans-CQC
 
 # Release
-### [V1.0](https://github.com/EqualOwl/Aquamans-CQC/releases/tag/v1.0) release of the pbo.
+### [V1.5](https://github.com/EqualOwl/Aquamans-CQC/releases/tag/1.5) release of the pbo.
 
 ## Teleport GUI
 The Teleport GUI/Dialog is simple although it will be remade in the future as it can be tricky to add more controls onto it. In the new dialog i will us a listbox instead of buttons. This makes it easier for people to add in custom spawns/areas.
