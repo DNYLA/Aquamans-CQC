@@ -1,5 +1,4 @@
 #include "dialogs\MasterHandler.hpp"
-#include "infiSTAR_AdminMenu.hpp"
 #include "scripts\override_VA\settings.hpp"
 
 respawnButton = 1;
