@@ -1,7 +1,7 @@
 # Aquamans-CQC
 AuqmansCQC mission file is a simple CQC gamemode for Arma 3.
 # Release
-### [V1.5](https://github.com/EqualOwl/Aquamans-CQC/releases/tag/1.5) release of the pbo.
+### [V1.6](https://github.com/DanyaalA/Aquamans-CQC/releases/tag/1.6) release of the pbo.
 
 ## Teleport GUI
 The Teleport GUI/Dialog is simple although it will be remade in the future as it can be tricky to add more controls onto it. In the new dialog i will us a listbox instead of buttons. This makes it easier for people to add in custom spawns/areas.
